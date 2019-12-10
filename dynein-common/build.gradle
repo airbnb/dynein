@@ -1,0 +1,11 @@
+dependencies {
+  compile libraries.guice
+  compile libraries.slf4j_api
+  compile libraries.jackson_annotations
+  compile libraries.jackson_databind
+  compile project(':dynein-api')
+
+  compileOnly libraries.lombok
+  annotationProcessor libraries.lombok
+  testCompile libraries.mockito_core
+}

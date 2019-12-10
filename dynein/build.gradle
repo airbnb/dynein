@@ -1,0 +1,26 @@
+dependencies {
+  compile libraries.guice
+  compile libraries.slf4j_api
+  compile libraries.jackson_annotations
+  compile libraries.jackson_databind
+  compile(libraries.software_amazon_awssdk_dynamodb_2_5_10) {
+    exclude group: 'com.fasterxml.jackson.core'
+    exclude group: 'com.fasterxml.jackson.datatype'
+    exclude group: 'com.fasterxml.jackson.dataformat'
+  }
+  compile libraries.rxjava2
+  compile libraries.dropwizard_core
+  compile(libraries.fabric8) {
+    exclude group: 'com.fasterxml.jackson.core'
+    exclude group: 'com.fasterxml.jackson.datatype'
+    exclude group: 'com.fasterxml.jackson.dataformat'
+  }
+  compile project(':conveyor')
+  compile project(':dynein-common')
+  compile project(':dynein-api')
+
+  compileOnly libraries.lombok
+  annotationProcessor libraries.lombok
+  testCompile libraries.mockito_core
+  testCompile libraries.junit
+}

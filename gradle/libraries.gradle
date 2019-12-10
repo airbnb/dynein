@@ -1,0 +1,31 @@
+ext {
+  versions = [
+    resilience4j: '0.16.0',
+    dropwizard: '1.0.6',
+  ]
+  libraries = [
+    com_github_ben_manes_caffeine_caffeine_2_5_2: 'com.github.ben-manes.caffeine:caffeine:2.5.2',
+    dropwizard_core: "io.dropwizard:dropwizard-core:${versions.dropwizard}",
+    fabric8: 'io.fabric8:kubernetes-client:4.4.1',
+    findbugs_jsr305: 'com.google.code.findbugs:jsr305:3.0.0',
+    guava: 'com.google.guava:guava:22.0',
+    guice: 'com.google.inject:guice:4.0',
+    io_github_resilence4j_bulkhead: "io.github.resilience4j:resilience4j-bulkhead:${versions.resilience4j}",
+    io_github_resilence4j_metrics: "io.github.resilience4j:resilience4j-metrics:${versions.resilience4j}",
+    jackson_annotations: 'com.fasterxml.jackson.core:jackson-annotations:2.7.8',
+    jackson_databind: 'com.fasterxml.jackson.core:jackson-databind:2.7.8',
+    jackson_dataformat_yaml: 'com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.7.8',
+    jackson_datatype_guava: 'com.fasterxml.jackson.datatype:jackson-datatype-guava:2.7.8',
+    javax_validaton: 'javax.validation:validation-api:1.1.0.Final',
+    javax_inject: 'javax.inject:javax.inject:1',
+    junit: 'junit:junit:4.12',
+    log4j_slf4j_impl: 'org.apache.logging.log4j:log4j-slf4j-impl:2.9.1',
+    lombok: 'org.projectlombok:lombok:1.18.10',
+    mockito_core: 'org.mockito:mockito-core:2.3.0',
+    rxjava2: 'io.reactivex.rxjava2:rxjava:2.1.16',
+    slf4j: 'org.slf4j:slf4j-api:1.7.25',
+    slf4j_api: "org.slf4j:slf4j-api:1.7.9",
+    software_amazon_awssdk_dynamodb_2_5_10: 'software.amazon.awssdk:dynamodb:2.5.10',
+    software_amazon_awssdk_sqs_2_5_71: "software.amazon.awssdk:sqs:2.5.71"
+  ]
+}

@@ -1,0 +1,23 @@
+repositories {
+    jcenter()
+}
+
+compileJava {
+    sourceCompatibility = '1.8'
+    targetCompatibility = '1.8'
+}
+
+dependencies {
+  compile libraries.jackson_annotations
+  compile libraries.javax_validaton
+  compile libraries.javax_inject
+  compile libraries.findbugs_jsr305
+  compile libraries.guava
+
+  testCompile libraries.mockito_core
+  testCompile libraries.junit
+
+
+  compileOnly libraries.lombok
+  annotationProcessor libraries.lombok
+}

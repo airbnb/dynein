@@ -1,0 +1,29 @@
+repositories {
+    jcenter()
+}
+
+compileJava {
+    sourceCompatibility = '1.8'
+    targetCompatibility = '1.8'
+}
+
+dependencies {
+  compile (libraries.software_amazon_awssdk_sqs_2_5_71){
+      exclude group: 'com.fasterxml.jackson.core'
+      exclude group: 'com.fasterxml.jackson.datatype'
+      exclude group: 'com.fasterxml.jackson.dataformat'
+  }
+  compile libraries.com_github_ben_manes_caffeine_caffeine_2_5_2
+  compile libraries.io_github_resilence4j_bulkhead
+  compile libraries.jackson_annotations
+  compile libraries.javax_validaton
+  compile libraries.javax_inject
+  compile libraries.findbugs_jsr305
+  compile libraries.guava
+
+  testCompile libraries.mockito_core
+  testCompile libraries.junit
+
+  compileOnly libraries.lombok
+  annotationProcessor libraries.lombok
+}

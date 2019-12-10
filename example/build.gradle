@@ -1,0 +1,11 @@
+apply plugin: 'application'
+
+mainClassName = 'com.airbnb.dynein.example.DyneinExampleApplication'
+
+dependencies {
+  compile project(':dynein')
+  compile libraries.dropwizard_core
+
+  compileOnly libraries.lombok
+  annotationProcessor libraries.lombok
+}
