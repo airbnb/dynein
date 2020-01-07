@@ -19,7 +19,7 @@ To run this example, follow the following steps:
    aws sqs create-queue --endpoint-url http://localhost:4576 --queue-name inbound --region us-east-1
    ```
 
-1. Run tis command to create the DynamoDB table:
+1. Run this command to create the DynamoDB table:
 
    ```shell script
    aws dynamodb create-table --table-name dynein_schedules \
